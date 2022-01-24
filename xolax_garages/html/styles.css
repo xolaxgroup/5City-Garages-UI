@@ -1,0 +1,230 @@
+@font-face {
+	font-family: Play;
+	src: url(play.ttf);
+}
+::-webkit-scrollbar {
+	width: 12px;
+	height: 12px;
+}
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+      background-color: rgba(24, 24, 24, 0.5);
+      border: 0px none #ffffff;
+      border-radius: 0px;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: #888888;
+      border: 0px none #ffffff;
+      border-radius: 0px;
+    }
+
+
+
+.sans {
+	font-family: Sans-serif;
+}
+
+h1 {
+	font-family: Play;
+	margin: 0;
+	padding: 0;
+}
+
+hr {
+	height: 2px;
+	width: 95%;
+	background: #7747e6;
+	border: none;
+}
+
+.full-screen {
+  width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+
+h1,h2,h3,h4 {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+	width: 690px;
+	background-color: rgba(0, 0, 0, 0.5);
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+	display: none;
+	z-index: 9999999;
+}
+
+.header {
+	width: 100%;
+	padding: 15px 0 15px 0;
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0.6);
+	font-family: 'Roboto', sans-serif !important;
+}
+
+.header .logo {
+  max-height: 80%;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.header .header-right {
+  color: #0a0808;
+  margin-right: 70px;
+  margin-top: 10px;
+}
+
+.header-right h3 {
+  float: right;
+  margin-top: 30px;
+}
+
+.btnCar{
+	display:none;
+}
+
+.impCar{
+	display:none;
+}
+
+.policeCar{
+	display:none;
+}
+
+.centered {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  width: 95%;
+  /*height: 500px;*/
+  margin-left:auto;
+  margin-right: auto;
+}
+.centered-noheight {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+  margin-left:auto;
+  margin-right: auto;
+}
+.button {
+  display: block;
+	align-items: center;
+	position: relative;
+	text-align: left;
+	width: 350px;
+	background-color: rgba(0, 0, 0, 0.6);
+	border-radius: 5px;
+	color: #fff;
+	font-size: 1.2em;
+	padding: 10px 10px 10px 10px;
+	text-decoration: none;
+	/* background-color: rgba(17, 83, 156,0.7); */
+	transition: 0.25s;
+}
+
+.button:hover {
+	text-decoration: none;
+	background-color: #fff;
+	color: #131313 !important;
+}
+
+.buttonc {
+	flex-grow: 1;
+	align-items: center;
+	height: 20px;
+	margin-left: 5px;
+	margin-right: 5px;
+	margin-bottom: 10px;
+	width: 100%;
+	background: #fff;
+	border-radius: 19px;
+	color: #000;
+	font-size: 1.1em;
+	padding: 10px 10px;
+	text-decoration: none;
+	font-weight: 700;
+  }
+  
+  .buttonc:hover {
+	  border: 2px solid #008cffcc; 
+	  color: #fff;
+  }
+
+#close {
+  display: inline-block;
+  width: 95%;
+  height: 30px;
+  text-align: center;
+  background: #008cffcc;
+  color: #fff;
+  font-size: 1.5em;
+  text-decoration: none;
+  margin-top: 5px;
+  border-radius: 4px;
+}
+
+.button span {
+  display: inline-block;
+  color: #0a0808;
+  float: right;
+  text-align: right;
+  font-size: 12px;
+  margin-top: -5px;
+}
+.button i {
+  display: inline-block;
+  width: 110px;
+  color: #0a0808;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#cars{
+	overflow: auto;
+	max-height: 263px;
+}
+
+.footer {
+	background-color: rgba(0, 0, 0, 0.6);
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+#mrS{
+	font-weight: bold;
+	position: relative;
+	animation-name: morisek;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+	font-family: Play;
+	font-size: 28px;
+	color: #0a0808;
+	text-shadow: 1px 1px 3px black;
+}
+@keyframes morisek {
+	0% {
+		left: 0px;
+	}
+
+	50% {
+		left: 71%;
+	}
+
+	100% {
+		left: 0px;
+	}
+}
